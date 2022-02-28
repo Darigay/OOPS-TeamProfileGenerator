@@ -38,11 +38,16 @@ The Team profile Generator is a used to quickly generate quick concise profile o
 - Jest
 
 ## ScreenShot of website
-
+- Final Output of Team Profile Builder
+![Finaloutput](https://user-images.githubusercontent.com/94805706/155931258-25786d5f-53d3-4eaa-8bc7-71a5d4ce45c9.png)
+- Passed Tests
+![passedtest](https://user-images.githubusercontent.com/94805706/155931270-131c1df4-5360-4ac2-86da-d595cfda3398.png)
+- Dynamically Generated Html 
+![Team html](https://user-images.githubusercontent.com/94805706/155931274-a11a9c37-4bf6-484d-af44-e2cd8cf32b32.png)
 
 ## Walkthrough Video of the Application
 
-
+https://user-images.githubusercontent.com/94805706/155931443-8e16f6ab-5313-4b45-8ad0-02477ebc487e.mp4
 
 ## Resources
 - UofU BootCamp Modules
