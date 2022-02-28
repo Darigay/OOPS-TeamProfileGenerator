@@ -1,0 +1,45 @@
+.header{
+    
+    background-color:rgb(195, 69, 69);
+    color:white
+    
+    
+}
+
+.team{
+    max-width:100%;
+    flex-wrap: wrap;
+}
+
+.employee-card{
+    margin:25px;
+    box-shadow:5px 0px 5px 0px black;
+    color:white;
+    height:350px;
+    width:300px;
+    display:flex;
+    justify-content: center;
+
+
+}
+
+.card-header{
+
+    background-color: rgb(9, 71, 187);
+    color:white;
+    justify-content: center;
+    
+
+}
+
+
+.card-body{
+    
+    justify-content: center;
+    background-color: rgb(245, 231, 231);
+}
+
+.list-group-item{
+    color:black
+
+}

@@ -10,13 +10,13 @@ const teamHtml = (teamMembers) =>{
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
         integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/1e0a13a89f.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="stylesheet.css">
     <title>Team Profile Generator</title>
 </head>
 <body>
     <header>
         <div class="container-fluid">
-            <div class="row">
+            <div class="row ">
                 <div class="col-12 jumbotron mb-3 header">
                     <h1 class="text-center">My Team</h1>
                 </div>
@@ -49,12 +49,12 @@ const generateTeam = (team) => {
     const generateManager = manager => {
 
         let managerHtml = `
-        <div class="employee-card">
-            <div class="card-header"> 
+        <div class="row employee-card">
+            <div class="col card-header"> 
                <h2 class="card-title">${manager.name} </h2>
                <h3 class="card-title"><i class="fas fa-mug-hot"></i>Manager</h3>
             </div>
-            <div class="card-body">
+            <div class="col card-body">
                 <ul class="list-group">
                    <li class="list-group-item">ID: ${manager.id}</li>
                    <li class="list-group-item">Email: <span id="email"><a href="mailto:${manager.email}">${manager.email}</a></span></li>
@@ -72,16 +72,16 @@ const generateTeam = (team) => {
         
         let engineerHtml = `
 
-       <div class="employee-card">
-            <div class="card-header">
+       <div class="row employee-card">
+            <div class="col card-header">
                 <h2 class="card-title"> ${engineer.name} </h2>
                 <h3 class="card-title"><i class="fas fa-glasses"></i>Engineer</h3>
             </div>
-            <div class="card-body">
+            <div class="col card-body">
                 <ul class="list-group">
                     <li class="list-group-item">ID: ${engineer.id}</li>
                     <li class="list-group-item">Email: <span id="email"><a href="mailto:${engineer.email}">${engineer.email}</a></span></li>
-                    <li class="list-group-item">Github: <a target="_blank" href="https://github.com/${engineer.githubUsername}">${engineer.githubUsername}</a></li>
+                    <li class="list-group-item">Github: <a target="_blank" href="https://github.com/${engineer.github}">${engineer.github}</a></li>
                 </ul>
             </div>
         </div>
@@ -94,12 +94,12 @@ const generateTeam = (team) => {
     const generateIntern = intern => {
         
         let internHtml = `
-        <div class="employee-card">
-            <div class="card-header">
+        <div class="row employee-card">
+            <div class="col card-header">
                 <h2 class="card-title"> ${intern.name} </h2>
-                <h3 class="card-title"><i class="fas fa-user-graduate"></i>Engineer</h3>
+                <h3 class="card-title"><i class="fas fa-user-graduate"></i>Intern</h3>
             </div>
-            <div class="card-body"> 
+            <div class="col card-body"> 
                 <ul class="list-group">
                     <li class="list-group-item">ID: ${intern.id}</li>
                     <li class="list-group-item">Email: <span id="email"><a href="mailto:${intern.email}">${intern.email}</a></span></li>
