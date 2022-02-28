@@ -1,4 +1,4 @@
-// tests written for name, id, email
+// tests written for name, id, email for all the employees
 
 const Employee = require('../lib/Employee')
 const employee = new Employee('Jared', '1', 'jared@fakemail.com');
