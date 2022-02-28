@@ -4,7 +4,7 @@ const intern = new Intern ('John', '5', 'john@fakemail.com', '2university');
 test('test the value of engineer object',() =>{
     expect(intern.name).toBe('John');
     expect(intern.id).toBe('5');
-    expect(intern.email).toBE('john@fakemail.com');
+    expect(intern.email).toBe('john@fakemail.com');
     expect(intern.school).toBe('2university');
   });
 

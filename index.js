@@ -1,24 +1,25 @@
 const fs = require('fs');
 const inquirer = require('inquirer');
+const path = require('path');
 
 const Employee = require('./lib/Employee');
 const Manager = require('./lib/Manager');
 const Engineer = require('./lib/Engineer');
 const Intern = require('./lib/Intern');
 
-const generatesite = require('./src/generateSite');
-
+const generateSite = require('./src/generateSite');
+const teamMembers = [];
 
 const promptMenu = () =>{
     return inquirer.prompt([
         {
             type: 'list',
-            name: "Employee List:",
+            name: "employeeList",
             message: " please select the employee",
             choices:['Manager', 'Engineer','Intern', 'Finish Building Team']
         }])
         .then(userPick => {
-            switch(userPick.menu){
+            switch(userPick.employeeList){
                 case 'Manager':promptManager();
                 break;
                 case 'Engineer': promptEngineer();
@@ -221,6 +222,9 @@ const promptMenu = () =>{
         })
     };
 
-    const buildTeam = () => {
+const buildTeam = () => {
         console.log (`Finished Building Your Team`)
+       fs.writeFileSync(path.join(__dirname,'/dist/team.Html'), generateSite(teamMembers));
     };
+
+promptMenu();

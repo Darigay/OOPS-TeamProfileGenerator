@@ -4,7 +4,7 @@ const employee = new Employee('Jared', '1', 'jared@fakemail.com');
 test('test the value of employee object',() =>{
     expect(employee.name).toBe('Jared');
     expect(employee.id).toBe('1');
-    expect(employee.email).toBE('jared@fakemail.com')
+    expect(employee.email).toBe('jared@fakemail.com')
   });
 
   test('test if we can get name from getName() method', () => {

@@ -4,7 +4,7 @@ const manager = new Manager('Jared', '1', 'jared@fakemail.com', '1234567890');
 test('test the value of manager object',() =>{
     expect(manager.name).toBe('Jared');
     expect(manager.id).toBe('1');
-    expect(manager.email).toBE('jared@fakemail.com');
+    expect(manager.email).toBe('jared@fakemail.com');
     expect(manager.officeNumber).toBe('1234567890');
   });
 
