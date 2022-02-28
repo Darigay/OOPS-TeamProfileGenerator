@@ -1,3 +1,5 @@
+// tests written for name, id, email, school for Intern
+
 const Intern = require('../lib/Intern');
 const intern = new Intern ('John', '5', 'john@fakemail.com', '2university');
 

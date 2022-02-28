@@ -1,3 +1,5 @@
+// tests written for name, id, email, OfficeNumber for Manager
+
 const Manager = require('../lib/Manager');
 const manager = new Manager('Jared', '1', 'jared@fakemail.com', '1234567890');
 

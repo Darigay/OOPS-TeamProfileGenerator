@@ -10,6 +10,7 @@ const Intern = require('./lib/Intern');
 const generateSite = require('./src/generateSite');
 const teamMembers = [];
 
+//prompts the menu for the employee list
 const promptMenu = () =>{
     return inquirer.prompt([
         {
@@ -32,7 +33,8 @@ const promptMenu = () =>{
         });
 
     };
-
+    
+    // inquirer prompt for manager
     const promptManager = () => {
         return inquirer.prompt([
             {
@@ -96,6 +98,7 @@ const promptMenu = () =>{
 
     };
 
+    // inquirer prompt for engineer
     const promptEngineer = () => {
            
         return inquirer.prompt([
@@ -159,6 +162,7 @@ const promptMenu = () =>{
         })
     };
 
+    // inquirer prompt for intern
     const promptIntern = () => {
             
         return inquirer.prompt([
@@ -222,9 +226,10 @@ const promptMenu = () =>{
         })
     };
 
+    //creating the html file in dist folder when 'Finish Building Team' menu selected
 const buildTeam = () => {
         console.log (`Finished Building Your Team`)
-       fs.writeFileSync(path.join(__dirname,'/dist/team.Html'), generateSite(teamMembers));
+       fs.writeFileSync(path.join(__dirname,'/dist/team.html'), generateSite(teamMembers));
     };
 
 promptMenu();
